@@ -8,7 +8,7 @@ import {
   X
 } from 'lucide-react'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { useRouter } from 'next/router'
 
 interface NavigationLayoutProps {
   children: React.ReactNode
@@ -16,7 +16,7 @@ interface NavigationLayoutProps {
 
 export default function NavigationLayout({ children }: NavigationLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  const pathname = usePathname()
+  const router = useRouter()
 
   const navigation = [
     { id: 'dashboard', name: 'Bloom Dashboard', icon: BarChart3, href: '/' },
@@ -49,7 +49,7 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
           <nav className="flex-1 px-4 py-4 space-y-2">
             {navigation.map((item) => {
               const Icon = item.icon
-              const isActive = pathname === item.href
+              const isActive = router.pathname === item.href
               return (
                 <Link
                   key={item.id}
