@@ -48,12 +48,6 @@
                         </svg>
                         Bloom Dashboard
                     </a>
-                    <a href="#" onclick="showPage('health')" class="nav-link flex items-center px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100">
-                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
-                        </svg>
-                        Health Impact Alerts
-                    </a>
                     <a href="#" onclick="showPage('map')" class="nav-link flex items-center px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100">
                         <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
@@ -67,33 +61,6 @@
 
         <!-- Main content -->
         <div class="flex-1 flex flex-col overflow-hidden">
-            <!-- Top header -->
-            <header class="bg-white shadow-sm border-b border-gray-200">
-                <div class="flex items-center justify-between px-6 py-4">
-                    <div class="flex items-center space-x-4">
-                        <span class="text-sm text-gray-500">AI</span>
-                        <div class="flex items-center space-x-2">
-                            <h2 class="text-lg font-semibold text-gray-900">Nature Themed Dashboard App</h2>
-                            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <button class="p-2 text-gray-400 hover:text-gray-600">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
-                            </svg>
-                        </button>
-                        <button class="flex items-center space-x-2 px-4 py-2 bg-bloom-green text-white rounded-lg hover:bg-green-600 transition-colors">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
-                            </svg>
-                            <span>Share</span>
-                        </button>
-                    </div>
-                </div>
-            </header>
 
             <!-- Page content -->
             <main class="flex-1 overflow-y-auto">
@@ -159,6 +126,145 @@
                             <h3 class="text-sm font-medium text-gray-500 mb-1">Health Alerts</h3>
                             <p class="text-2xl font-bold text-gray-900 mb-1">3</p>
                             <p class="text-sm text-gray-600">Active health advisories</p>
+                        </div>
+                    </div>
+
+                    <!-- Health Impact Alerts -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8">
+                        <div class="mb-6">
+                            <h2 class="text-xl font-bold text-gray-900 mb-2">Health Impact Alerts</h2>
+                            <p class="text-gray-600">How current blooming seasons may affect health conditions</p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-white rounded-lg shadow-sm border border-gray-200 border-l-red-500 border-l-4">
+                                <div class="p-6">
+                                    <div class="flex items-start justify-between mb-4">
+                                        <div class="flex items-center space-x-3">
+                                            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                            </svg>
+                                            <h3 class="text-xl font-bold text-gray-900">Seasonal Allergies</h3>
+                                        </div>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="px-3 py-1 rounded-full text-white text-sm font-medium bg-red-500">
+                                                High Risk
+                                            </span>
+                                            <span class="text-sm text-gray-600">25% of population</span>
+                                        </div>
+                                    </div>
+
+                                    <p class="text-gray-700 mb-6">Tree pollen from Jacaranda and other blooming trees can trigger severe allergic reactions.</p>
+
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-gray-900 mb-3">Recommended Precautions:</h4>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start space-x-2 text-sm text-gray-600">
+                                                <span class="text-bloom-green mt-1">•</span>
+                                                <span>Keep windows closed during peak bloom times</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2 text-sm text-gray-600">
+                                                <span class="text-bloom-green mt-1">•</span>
+                                                <span>Use air purifiers indoors</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2 text-sm text-gray-600">
+                                                <span class="text-bloom-green mt-1">•</span>
+                                                <span>Take antihistamines as prescribed</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2 text-sm text-gray-600">
+                                                <span class="text-bloom-green mt-1">•</span>
+                                                <span>Limit outdoor activities during morning hours</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg shadow-sm border border-gray-200 border-l-orange-500 border-l-4">
+                                <div class="p-6">
+                                    <div class="flex items-start justify-between mb-4">
+                                        <div class="flex items-center space-x-3">
+                                            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                            </svg>
+                                            <h3 class="text-xl font-bold text-gray-900">Asthma Exacerbation</h3>
+                                        </div>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="px-3 py-1 rounded-full text-white text-sm font-medium bg-orange-500">
+                                                Medium Risk
+                                            </span>
+                                            <span class="text-sm text-gray-600">8% of population</span>
+                                        </div>
+                                    </div>
+
+                                    <p class="text-gray-700 mb-6">Increased pollen levels can worsen asthma symptoms and trigger breathing difficulties.</p>
+
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-gray-900 mb-3">Recommended Precautions:</h4>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start space-x-2 text-sm text-gray-600">
+                                                <span class="text-bloom-green mt-1">•</span>
+                                                <span>Carry rescue inhalers at all times</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2 text-sm text-gray-600">
+                                                <span class="text-bloom-green mt-1">•</span>
+                                                <span>Monitor local pollen forecasts</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2 text-sm text-gray-600">
+                                                <span class="text-bloom-green mt-1">•</span>
+                                                <span>Wear masks when outdoors</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2 text-sm text-gray-600">
+                                                <span class="text-bloom-green mt-1">•</span>
+                                                <span>Consider increasing controller medications</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg shadow-sm border border-gray-200 border-l-orange-500 border-l-4">
+                                <div class="p-6">
+                                    <div class="flex items-start justify-between mb-4">
+                                        <div class="flex items-center space-x-3">
+                                            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                            </svg>
+                                            <h3 class="text-xl font-bold text-gray-900">Hay Fever</h3>
+                                        </div>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="px-3 py-1 rounded-full text-white text-sm font-medium bg-orange-500">
+                                                Medium Risk
+                                            </span>
+                                            <span class="text-sm text-gray-600">15% of population</span>
+                                        </div>
+                                    </div>
+
+                                    <p class="text-gray-700 mb-6">Grass and flower pollen contribute to classic hay fever symptoms.</p>
+
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-gray-900 mb-3">Recommended Precautions:</h4>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start space-x-2 text-sm text-gray-600">
+                                                <span class="text-bloom-green mt-1">•</span>
+                                                <span>Shower after outdoor activities</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2 text-sm text-gray-600">
+                                                <span class="text-bloom-green mt-1">•</span>
+                                                <span>Change clothes when returning indoors</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2 text-sm text-gray-600">
+                                                <span class="text-bloom-green mt-1">•</span>
+                                                <span>Use saline nasal rinses</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2 text-sm text-gray-600">
+                                                <span class="text-bloom-green mt-1">•</span>
+                                                <span>Keep humidity levels optimal (30-50%)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -242,58 +348,6 @@
                     </div>
                 </div>
 
-                <!-- Health Alerts Page -->
-                <div id="health" class="page-content p-6" style="display: none;">
-                    <div class="mb-8">
-                        <h1 class="text-3xl font-bold text-gray-900 mb-2">Health Impact Alerts</h1>
-                        <p class="text-gray-600">How current blooming seasons may affect health conditions</p>
-                    </div>
-
-                    <div class="space-y-6">
-                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 border-l-red-500 border-l-4">
-                            <div class="p-6">
-                                <div class="flex items-start justify-between mb-4">
-                                    <div class="flex items-center space-x-3">
-                                        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
-                                        </svg>
-                                        <h2 class="text-xl font-bold text-gray-900">Seasonal Allergies</h2>
-                                    </div>
-                                    <div class="flex items-center space-x-3">
-                                        <span class="px-3 py-1 rounded-full text-white text-sm font-medium bg-red-500">
-                                            High Risk
-                                        </span>
-                                        <span class="text-sm text-gray-600">25% of population</span>
-                                    </div>
-                                </div>
-
-                                <p class="text-gray-700 mb-6">Tree pollen from Jacaranda and other blooming trees can trigger severe allergic reactions.</p>
-
-                                <div>
-                                    <h3 class="text-sm font-semibold text-gray-900 mb-3">Recommended Precautions:</h3>
-                                    <ul class="space-y-2">
-                                        <li class="flex items-start space-x-2 text-sm text-gray-600">
-                                            <span class="text-bloom-green mt-1">•</span>
-                                            <span>Keep windows closed during peak bloom times</span>
-                                        </li>
-                                        <li class="flex items-start space-x-2 text-sm text-gray-600">
-                                            <span class="text-bloom-green mt-1">•</span>
-                                            <span>Use air purifiers indoors</span>
-                                        </li>
-                                        <li class="flex items-start space-x-2 text-sm text-gray-600">
-                                            <span class="text-bloom-green mt-1">•</span>
-                                            <span>Take antihistamines as prescribed</span>
-                                        </li>
-                                        <li class="flex items-start space-x-2 text-sm text-gray-600">
-                                            <span class="text-bloom-green mt-1">•</span>
-                                            <span>Limit outdoor activities during morning hours</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Bloom Map Page -->
                 <div id="map" class="page-content p-6" style="display: none;">
@@ -308,59 +362,112 @@
                         <p class="text-gray-600">Interactive map showing blooming intensity across Monterrey, Nuevo León zones</p>
                     </div>
 
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                        <h2 class="text-xl font-bold text-gray-900 mb-2">Monterrey Zone Blooming Activity - 2024</h2>
-                        <p class="text-gray-600 mb-6">Click on a zone to view detailed blooming information</p>
-
-                        <div class="flex justify-center mb-8">
-                            <div class="relative w-96 h-96 border-2 border-dashed border-gray-300 rounded-full flex items-center justify-center">
-                                <div class="absolute w-4 h-4 bg-bloom-green rounded-full flex items-center justify-center">
-                                    <span class="text-xs text-white font-medium">Centro</span>
+                    <!-- Selection Controls -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6">
+                        <h2 class="text-xl font-bold text-gray-900 mb-4">Select Region and Year</h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Region Dropdown -->
+                            <div class="space-y-2">
+                                <label class="block text-sm font-medium text-gray-700">Select Region</label>
+                                <div class="relative">
+                                    <button onclick="toggleRegionDropdown()" class="w-full flex items-center justify-between px-4 py-3 bg-white border border-gray-300 rounded-lg shadow-sm hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-bloom-green focus:border-bloom-green transition-colors">
+                                        <span id="selectedRegion" class="text-gray-500">Choose a region...</span>
+                                        <svg class="w-5 h-5 text-gray-400 transition-transform" id="regionChevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </button>
+                                    
+                                    <div id="regionDropdown" class="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto hidden">
+                                        <button onclick="selectRegion('Monterrey Norte')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">Monterrey Norte</button>
+                                        <button onclick="selectRegion('Monterrey Noreste')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">Monterrey Noreste</button>
+                                        <button onclick="selectRegion('Monterrey Noroeste')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">Monterrey Noroeste</button>
+                                        <button onclick="selectRegion('Monterrey Este')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">Monterrey Este</button>
+                                        <button onclick="selectRegion('Monterrey Oeste')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">Monterrey Oeste</button>
+                                        <button onclick="selectRegion('Monterrey Sur')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">Monterrey Sur</button>
+                                        <button onclick="selectRegion('Monterrey Sureste')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">Monterrey Sureste</button>
+                                        <button onclick="selectRegion('Monterrey Suroeste')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">Monterrey Suroeste</button>
+                                    </div>
                                 </div>
-                                
-                                <button class="absolute w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white text-xs font-medium hover:scale-110 transition-transform cursor-pointer" style="left: calc(50% + 99px - 16px); top: calc(50% - 99px - 16px);" title="North - 78%">
-                                    78%
-                                </button>
-                                <button class="absolute w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-medium hover:scale-110 transition-transform cursor-pointer" style="left: calc(50% + 99px - 16px); top: calc(50% - 99px - 16px);" title="Northeast - 85%">
-                                    85%
-                                </button>
-                                <button class="absolute w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-medium hover:scale-110 transition-transform cursor-pointer" style="left: calc(50% + 99px - 16px); top: calc(50% - 99px - 16px);" title="East - 80%">
-                                    80%
-                                </button>
-                                <button class="absolute w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-medium hover:scale-110 transition-transform cursor-pointer" style="left: calc(50% + 99px - 16px); top: calc(50% - 99px - 16px);" title="Southeast - 88%">
-                                    88%
-                                </button>
-                                <button class="absolute w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-medium hover:scale-110 transition-transform cursor-pointer" style="left: calc(50% + 99px - 16px); top: calc(50% - 99px - 16px);" title="South - 92%">
-                                    92%
-                                </button>
-                                <button class="absolute w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white text-xs font-medium hover:scale-110 transition-transform cursor-pointer" style="left: calc(50% + 99px - 16px); top: calc(50% - 99px - 16px);" title="Southwest - 65%">
-                                    65%
-                                </button>
-                                <button class="absolute w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white text-xs font-medium hover:scale-110 transition-transform cursor-pointer" style="left: calc(50% + 99px - 16px); top: calc(50% - 99px - 16px);" title="West - 75%">
-                                    75%
-                                </button>
-                                <button class="absolute w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white text-xs font-medium hover:scale-110 transition-transform cursor-pointer" style="left: calc(50% + 99px - 16px); top: calc(50% - 99px - 16px);" title="Northwest - 72%">
-                                    72%
-                                </button>
+                            </div>
+
+                            <!-- Year Dropdown -->
+                            <div class="space-y-2">
+                                <label class="block text-sm font-medium text-gray-700">Select Year</label>
+                                <div class="relative">
+                                    <button onclick="toggleYearDropdown()" class="w-full flex items-center justify-between px-4 py-3 bg-white border border-gray-300 rounded-lg shadow-sm hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-bloom-green focus:border-bloom-green transition-colors">
+                                        <span id="selectedYear" class="text-gray-900">2024</span>
+                                        <svg class="w-5 h-5 text-gray-400 transition-transform" id="yearChevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </button>
+                                    
+                                    <div id="yearDropdown" class="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto hidden">
+                                        <button onclick="selectYear('2020')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">2020</button>
+                                        <button onclick="selectYear('2021')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">2021</button>
+                                        <button onclick="selectYear('2022')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">2022</button>
+                                        <button onclick="selectYear('2023')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">2023</button>
+                                        <button onclick="selectYear('2024')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors">2024</button>
+                                        <button onclick="selectYear('2025')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors flex items-center justify-between">
+                                            <span>2025</span>
+                                            <span class="text-xs text-orange-600 font-medium">Prediction</span>
+                                        </button>
+                                        <button onclick="selectYear('2026')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors flex items-center justify-between">
+                                            <span>2026</span>
+                                            <span class="text-xs text-orange-600 font-medium">Prediction</span>
+                                        </button>
+                                        <button onclick="selectYear('2027')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors flex items-center justify-between">
+                                            <span>2027</span>
+                                            <span class="text-xs text-orange-600 font-medium">Prediction</span>
+                                        </button>
+                                        <button onclick="selectYear('2028')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors flex items-center justify-between">
+                                            <span>2028</span>
+                                            <span class="text-xs text-orange-600 font-medium">Prediction</span>
+                                        </button>
+                                        <button onclick="selectYear('2029')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors flex items-center justify-between">
+                                            <span>2029</span>
+                                            <span class="text-xs text-orange-600 font-medium">Prediction</span>
+                                        </button>
+                                        <button onclick="selectYear('2030')" class="w-full px-4 py-3 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors flex items-center justify-between">
+                                            <span>2030</span>
+                                            <span class="text-xs text-orange-600 font-medium">Prediction</span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="flex justify-center space-x-6">
-                            <div class="flex items-center space-x-2">
-                                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-                                <span class="text-sm text-gray-600">Very High (80%+)</span>
+                        <!-- Future Year Warning -->
+                        <div id="predictionWarning" class="mt-4 p-4 bg-orange-50 border border-orange-200 rounded-lg hidden">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-orange-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                </svg>
+                                <div>
+                                    <h3 class="font-medium text-orange-900 mb-1">Prediction Data</h3>
+                                    <p class="text-sm text-orange-800">
+                                        The data for <span id="predictionYear"></span> represents predictions based on historical patterns and climate models. 
+                                        These are estimates and may not reflect actual future conditions.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="flex items-center space-x-2">
-                                <div class="w-3 h-3 bg-orange-500 rounded-full"></div>
-                                <span class="text-sm text-gray-600">High (60-79%)</span>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                                <span class="text-sm text-gray-600">Medium (40-59%)</span>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                                <span class="text-sm text-gray-600">Low (0-39%)</span>
+                        </div>
+                    </div>
+
+                    <!-- Map Visualization -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <h2 id="mapTitle" class="text-xl font-bold text-gray-900 mb-2">Monterrey Zone Blooming Activity</h2>
+                        <p id="mapDescription" class="text-gray-600 mb-6">Select a region and year to view detailed blooming information</p>
+
+                        <!-- Map Placeholder -->
+                        <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg h-96 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <h3 class="text-lg font-medium text-gray-600 mb-2">Interactive Map</h3>
+                                <p id="mapPlaceholderText" class="text-gray-500">Map will be displayed here once a region is selected</p>
                             </div>
                         </div>
                     </div>
@@ -370,6 +477,10 @@
     </div>
 
     <script>
+        let selectedRegion = '';
+        let selectedYear = '2024';
+        let currentYear = new Date().getFullYear();
+
         function showPage(pageId) {
             // Hide all pages
             const pages = document.querySelectorAll('.page-content');
@@ -389,6 +500,100 @@
             event.target.closest('.nav-link').classList.add('bg-bloom-green', 'text-white');
             event.target.closest('.nav-link').classList.remove('text-gray-700', 'hover:bg-gray-100');
         }
+
+        function toggleRegionDropdown() {
+            const dropdown = document.getElementById('regionDropdown');
+            const chevron = document.getElementById('regionChevron');
+            
+            if (dropdown.classList.contains('hidden')) {
+                dropdown.classList.remove('hidden');
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                dropdown.classList.add('hidden');
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        function toggleYearDropdown() {
+            const dropdown = document.getElementById('yearDropdown');
+            const chevron = document.getElementById('yearChevron');
+            
+            if (dropdown.classList.contains('hidden')) {
+                dropdown.classList.remove('hidden');
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                dropdown.classList.add('hidden');
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        function selectRegion(region) {
+            selectedRegion = region;
+            document.getElementById('selectedRegion').textContent = region;
+            document.getElementById('selectedRegion').classList.remove('text-gray-500');
+            document.getElementById('selectedRegion').classList.add('text-gray-900');
+            
+            // Close dropdown
+            document.getElementById('regionDropdown').classList.add('hidden');
+            document.getElementById('regionChevron').style.transform = 'rotate(0deg)';
+            
+            updateMapContent();
+        }
+
+        function selectYear(year) {
+            selectedYear = year;
+            document.getElementById('selectedYear').textContent = year;
+            
+            // Close dropdown
+            document.getElementById('yearDropdown').classList.add('hidden');
+            document.getElementById('yearChevron').style.transform = 'rotate(0deg)';
+            
+            // Show/hide prediction warning
+            const predictionWarning = document.getElementById('predictionWarning');
+            const predictionYear = document.getElementById('predictionYear');
+            
+            if (parseInt(year) > currentYear) {
+                predictionWarning.classList.remove('hidden');
+                predictionYear.textContent = year;
+            } else {
+                predictionWarning.classList.add('hidden');
+            }
+            
+            updateMapContent();
+        }
+
+        function updateMapContent() {
+            const mapTitle = document.getElementById('mapTitle');
+            const mapDescription = document.getElementById('mapDescription');
+            const mapPlaceholderText = document.getElementById('mapPlaceholderText');
+            
+            if (selectedRegion) {
+                const isFutureYear = parseInt(selectedYear) > currentYear;
+                mapTitle.textContent = `${selectedRegion} - ${selectedYear}`;
+                mapDescription.textContent = `Viewing data for ${selectedRegion} in ${selectedYear}${isFutureYear ? ' (Prediction)' : ''}`;
+                mapPlaceholderText.textContent = `Map visualization for ${selectedRegion} will be displayed here`;
+            } else {
+                mapTitle.textContent = 'Monterrey Zone Blooming Activity';
+                mapDescription.textContent = 'Select a region and year to view detailed blooming information';
+                mapPlaceholderText.textContent = 'Map will be displayed here once a region is selected';
+            }
+        }
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(event) {
+            const regionDropdown = document.getElementById('regionDropdown');
+            const yearDropdown = document.getElementById('yearDropdown');
+            
+            if (!event.target.closest('#regionDropdown') && !event.target.closest('button[onclick="toggleRegionDropdown()"]')) {
+                regionDropdown.classList.add('hidden');
+                document.getElementById('regionChevron').style.transform = 'rotate(0deg)';
+            }
+            
+            if (!event.target.closest('#yearDropdown') && !event.target.closest('button[onclick="toggleYearDropdown()"]')) {
+                yearDropdown.classList.add('hidden');
+                document.getElementById('yearChevron').style.transform = 'rotate(0deg)';
+            }
+        });
     </script>
 </body>
 </html>
