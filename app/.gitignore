@@ -1,6 +1,5 @@
-node_modules/
-
-/frontend/build
-/frontend/.next/
-/frontend/out/
-/frontend/.vercel/
+backend/node_modules
+frontend/node_modules
+frontend/build
+frontend/.next
+.vscode
