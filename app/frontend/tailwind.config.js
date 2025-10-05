@@ -1,19 +1,17 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import { defineConfig } from '@tailwindcss/vite'
+
+export default defineConfig({
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        'bloom-green': '#10B981',
-        'bloom-orange': '#F59E0B',
-        'bloom-red': '#EF4444',
-        'bloom-blue': '#3B82F6',
+        'bloom-green': '#059669',
+        'bloom-orange': '#ea580c',
+        'bloom-red': '#dc2626',
       },
     },
   },
-  plugins: [],
-}
+})
