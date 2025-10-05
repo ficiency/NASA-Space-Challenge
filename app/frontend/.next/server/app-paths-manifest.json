@@ -1,0 +1,6 @@
+{
+  "/not-found": "app/not-found.js",
+  "/page": "app/page.js",
+  "/bloom-map/page": "app/bloom-map/page.js",
+  "/health-alerts/page": "app/health-alerts/page.js"
+}
