@@ -3,11 +3,12 @@
 import { useState } from 'react'
 import { 
   MapPin, 
-  Heart, 
   BarChart3, 
   Menu,
   X
 } from 'lucide-react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 interface NavigationLayoutProps {
   children: React.ReactNode
@@ -15,12 +16,11 @@ interface NavigationLayoutProps {
 
 export default function NavigationLayout({ children }: NavigationLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  const [activePage, setActivePage] = useState('dashboard')
+  const pathname = usePathname()
 
   const navigation = [
     { id: 'dashboard', name: 'Bloom Dashboard', icon: BarChart3, href: '/' },
     { id: 'map', name: 'Monterrey Bloom Map', icon: MapPin, href: '/bloom-map' },
-    { id: 'alerts', name: 'Health Alerts', icon: Heart, href: '/health-alerts' },
   ]
 
   return (
@@ -49,21 +49,21 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
           <nav className="flex-1 px-4 py-4 space-y-2">
             {navigation.map((item) => {
               const Icon = item.icon
-              const isActive = activePage === item.id
+              const isActive = pathname === item.href
               return (
-                <a
+                <Link
                   key={item.id}
                   href={item.href}
-                  onClick={() => setActivePage(item.id)}
                   className={`nav-link flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive 
                       ? 'bg-bloom-green text-white' 
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
+                  onClick={() => setSidebarOpen(false)}
                 >
                   <Icon className="w-5 h-5 mr-3" />
                   {item.name}
-                </a>
+                </Link>
               )
             })}
           </nav>

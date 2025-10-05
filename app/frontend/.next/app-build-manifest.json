@@ -14,19 +14,12 @@
     "/bloom-map/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/bloom-map/page.css",
       "static/chunks/app/bloom-map/page.js"
     ],
     "/health-alerts/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/health-alerts/page.css",
       "static/chunks/app/health-alerts/page.js"
-    ],
-    "/not-found": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
     ]
   }
 }

@@ -1,6 +1,4 @@
 'use client'
-
-import Layout from '../Layout'
 import { MapPin, Calendar, Filter, Info, ChevronDown, AlertTriangle } from 'lucide-react'
 import { useState } from 'react'
 
@@ -28,7 +26,6 @@ export default function BloomMap() {
   const isFutureYear = parseInt(selectedYear) > currentYear
 
   return (
-    <Layout>
       <div className="flex h-full">
         {/* Main Content */}
         <div className="flex-1 p-6">
@@ -198,6 +195,5 @@ export default function BloomMap() {
           )}
         </div>
       </div>
-    </Layout>
   )
 }

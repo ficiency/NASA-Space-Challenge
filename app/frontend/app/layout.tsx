@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import NavigationLayout from './components/NavigationLayout'
 
 export const metadata: Metadata = {
   title: 'BloomingHealth - Health & Bloom Tracker',
@@ -14,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <NavigationLayout>
+          {children}
+        </NavigationLayout>
       </body>
     </html>
   )
