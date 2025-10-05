@@ -1,0 +1,10 @@
+{
+  "name": "nasa-space-challenge-root",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build-and-run": "npm --prefix ./app/frontend run build && node ./app/backend/server.js"
+  },
+  "description": "Root helper scripts for building frontend and running backend",
+  "license": "MIT"
+}
