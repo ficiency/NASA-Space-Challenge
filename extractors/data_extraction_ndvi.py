@@ -86,7 +86,6 @@ for i, point in enumerate(points):
     # Enviar tarea
     print(f"Enviando tarea {i+1}/9: {point['name']} ({point['lat']}, {point['lon']})")
     resp = requests.post(
-        "https://appeears.earthdatacloud.nasa.gov/api/task",
         headers=headers,
         json=task
     )
