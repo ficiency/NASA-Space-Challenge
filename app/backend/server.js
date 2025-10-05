@@ -36,5 +36,24 @@ if (staticDir) {
 
 const host = process.env.HOST || '127.0.0.1';
 app.listen(port, host, () => {
-  console.log(`Backend listening on http://${host}:${port}`);
+  const url = `http://${host}:${port}`;
+  console.log(`Backend listening on ${url}`);
+
+  // Auto-open browser on Windows unless OPEN_BROWSER is 'false'
+  const openBrowser = (process.env.OPEN_BROWSER || 'true').toLowerCase();
+  if (openBrowser !== 'false') {
+    try {
+      const { exec } = require('child_process');
+      // 'start' is a cmd built-in; use 'cmd /c start' to open default browser on Windows
+      if (process.platform === 'win32') {
+        exec(`cmd /c start "" "${url}"`);
+      } else if (process.platform === 'darwin') {
+        exec(`open "${url}"`);
+      } else {
+        exec(`xdg-open "${url}"`);
+      }
+    } catch (e) {
+      console.warn('Failed to auto-open browser:', e.message);
+    }
+  }
 });
