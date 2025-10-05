@@ -2,7 +2,31 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Badge } from './ui/badge';
 import { Progress } from './ui/progress';
 import { Alert, AlertDescription } from './ui/alert';
-import { AlertTriangle, Flower2, Heart, Info, Thermometer } from 'lucide-react';
+import { useState } from 'react';
+import { AlertTriangle, Flower2, Heart, Info } from 'lucide-react';
+
+// Year selector component (simple UI placeholder for future AI integration)
+function YearSelector() {
+  const currentYear = new Date().getFullYear();
+  const [year, setYear] = useState(currentYear + 1);
+  const years = Array.from({ length: 10 }, (_, i) => currentYear + 1 + i);
+
+  return (
+    <div>
+      <label className="block text-sm text-muted-foreground mb-1">Select Year</label>
+      <select
+        value={year}
+        onChange={(e) => setYear(Number(e.target.value))}
+        className="w-full rounded-md border px-2 py-1"
+        aria-label="Select prediction year"
+      >
+        {years.map((y) => (
+          <option key={y} value={y}>{y}</option>
+        ))}
+      </select>
+    </div>
+  );
+}
 import { currentFlowers, healthImpacts } from '../data/mockData';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
@@ -26,6 +50,20 @@ export function Dashboard() {
 
       {/* Current Status Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* Year selection card (for future prediction input) */}
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle>Predict Year</CardTitle>
+            <Info className="h-4 w-4 text-blue-600" />
+          </CardHeader>
+          <CardContent>
+              <YearSelector />
+            <p className="text-xs text-muted-foreground mt-2">
+              Choose a future year to run bloom predictions (AI integration coming soon)
+            </p>
+          </CardContent>
+        </Card>
+
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle>Active Blooms</CardTitle>
@@ -53,18 +91,7 @@ export function Dashboard() {
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle>Temperature</CardTitle>
-            <Thermometer className="h-4 w-4 text-blue-600" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl">{temperatureAvg}°C</div>
-            <p className="text-xs text-muted-foreground">
-              Average today
-            </p>
-          </CardContent>
-        </Card>
+        
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
