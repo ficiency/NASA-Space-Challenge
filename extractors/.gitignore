@@ -1,0 +1,7 @@
+legacy.py
+/__pycache__
+.env
+/Lib
+/Scripts
+/App/backend/node_modules
+/App/frontend/node_modules
