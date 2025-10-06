@@ -1,6 +1,6 @@
 # BloomWatch: An Earth Observation Application for Global Flowering Phenology
 
-![BloomWatch Demo](BloomHealth_demo.mp4)
+![BloomWatch Demo](assets/demo.gif)
 
 ## 🌸 About the Project
 
