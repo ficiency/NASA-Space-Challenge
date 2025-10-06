@@ -5,8 +5,7 @@ import {
   Menu,
   X,
   Flower2,
-  ChevronLeft,
-  ChevronRight
+  ChevronLeft
 } from 'lucide-react'
 
 interface SidebarProps {
